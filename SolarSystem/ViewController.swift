@@ -24,10 +24,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let solarSystem = SCNScene()
+        let earth = CelesticalBody(name: "earth", texture: #imageLiteral(resourceName: "4096_earth"), radius: CGFloat(0.1), position: SCNVector3(x: 0, y: 0, z: -0.5))
+        earth.RotateAction = SCNAction.rotate(by: 90 * CGFloat(.pi/180.0), around: SCNVector3(x: 0, y: 1, z: 0), duration: 8)
+        earth.CreateSatelate(name: "Moon", texture: #imageLiteral(resourceName: "moonmap2k"), radius: 0.05, position: SCNVector3(x: 0, y: 0, z: -0.5), rotateFunction: nil, circulateFunction: nil)
+        let moon = earth.childNode(withName: "Moon", recursively: true)
+        moon?.geometry?.firstMaterial?.diffuse.textureComponents = .red
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        solarSystem.rootNode.addChildNode(earth)
+        sceneView.scene = solarSystem
+        
+//        let earthAction = SCNAction.rotate(by: 90 * CGFloat(.pi/180.0), around: SCNVector3(x: 0, y: 1, z: 0), duration: 8)
+//        // Set the scene to the view
+//        sceneView.scene = earth
+        
+        
+//        var repatAction = SCNAction.repeatForever(earthAction)
+//        node.runAction(repatAction)
     }
     
     override func viewWillAppear(_ animated: Bool) {

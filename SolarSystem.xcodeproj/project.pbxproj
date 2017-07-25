@@ -13,6 +13,7 @@
 		D03183071F1CDCF6007D03B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03183051F1CDCF6007D03B2 /* Main.storyboard */; };
 		D03183091F1CDCF6007D03B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03183081F1CDCF6007D03B2 /* Assets.xcassets */; };
 		D031830C1F1CDCF6007D03B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D031830A1F1CDCF6007D03B2 /* LaunchScreen.storyboard */; };
+		D0AEAE2C1F2295D200078717 /* CelesticalBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AEAE2B1F2295D200078717 /* CelesticalBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D03183081F1CDCF6007D03B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D031830B1F1CDCF6007D03B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D031830D1F1CDCF6007D03B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0AEAE2B1F2295D200078717 /* CelesticalBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelesticalBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D03182FF1F1CDCF6007D03B2 /* AppDelegate.swift */,
 				D03183011F1CDCF6007D03B2 /* art.scnassets */,
 				D03183031F1CDCF6007D03B2 /* ViewController.swift */,
+				D0AEAE2B1F2295D200078717 /* CelesticalBody.swift */,
 				D03183051F1CDCF6007D03B2 /* Main.storyboard */,
 				D03183081F1CDCF6007D03B2 /* Assets.xcassets */,
 				D031830A1F1CDCF6007D03B2 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				D03183041F1CDCF6007D03B2 /* ViewController.swift in Sources */,
 				D03183001F1CDCF6007D03B2 /* AppDelegate.swift in Sources */,
+				D0AEAE2C1F2295D200078717 /* CelesticalBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +190,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -241,6 +247,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -316,6 +324,7 @@
 				D03183121F1CDCF6007D03B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
